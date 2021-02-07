@@ -1,0 +1,16 @@
+[{
+    "id": "1",
+    "departmentName" : "Surgery"
+},
+{
+    "id": "2",
+    "departmentName" : "Dendistry"
+},
+{
+    "id": "3",
+    "departmentName": "Cardio" 
+},
+{
+    "id": "4",
+    "departmentName": "Gynocology"
+}]

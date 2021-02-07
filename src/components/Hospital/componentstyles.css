@@ -1,0 +1,142 @@
+.d-flex{
+ display: flex;
+}
+.header{
+    width: 100%;
+    height: 40vh;
+    background-color: #345868;
+    align-items: center;
+}
+.header h1{
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+.departscontainer{
+    max-width: 500px;
+    text-align: center;
+    margin: 0 auto;
+}
+.Departs-section{
+    text-align: center;
+}
+.department-input{
+    width: 100%;
+}
+.departmentInput-form{
+    width: 80%;
+    height: 30px;
+}
+.Departs-section form{
+    margin: 10px 0;
+}
+.Departs-section form input[type='text']{
+    width: 90%;
+    padding: 17px 20px;
+    border-right: 0px;
+    border: 1px solid #345868;
+}
+.Departs-section form input[type='submit']{
+    padding: 19px 26px;
+    background-color: #345868;
+    color: #fff;
+    cursor: pointer;
+   border: none;
+}
+.Departs-section form button{
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+}
+.Departs-section form input[type='text']:hover{
+    border: 2px solid #FD7F68;
+}
+.Departs-section form input[type='text']:focus{
+    border: 2px solid #FD7F68;
+}
+/* Doctors Displaying Card  */
+.doc-card{
+    border: 2px solid #707070;
+    display: flex;
+    justify-content: space-between;
+}
+.doc-card .card-left{
+    display: flex;
+    justify-content: flex-start;
+}
+.doc-card .card-left .doc-img{
+    height: 138px;
+}
+.doc-card .card-left .doc-details{
+    margin-left: 20px;
+}
+.doc-card .card-left .doc-details h4{
+    margin-top: 0;
+}
+
+/* Doctor Card Filling Hospital Form  */
+.hospital-form{
+    background-color: #345868;
+    padding: 40px;
+}
+.hospital-form form{
+    display: flex;
+}
+
+.hospital-form .namenDepart{
+    /* width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; */
+}
+.hospital-form .hosformGrid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 600px);
+    grid-gap: 40px
+}
+.hospital-form .hosformGrid div label{
+    color: #fff;
+}
+.hospital-form .hosformGrid .doc-name,.hospital-form .hosformGrid .doc-depart,.hospital-form .hosformGrid .degree, .hospital-form .hosformGrid .photo{
+    text-align: center;
+}
+.hospital-form form input, .hospital-form form select{
+    width: 80%;
+    height: 30px;
+    border: 0;
+}
+.hospital-form p {
+    font-size: 12pt;
+    color: black;
+  }
+  .Visittimes input[type='time']{
+      width: 80px;
+  }
+  .visits#Visits{
+      margin-top: 28px;
+  }
+  .visit-grid{
+      display: grid;
+    grid-template-columns: repeat(auto-fill, 184px);
+    grid-gap: 4%;
+  }
+  .visit-grid h6{
+      text-align: center;
+  }
+  .visit-grid div{
+    background-color: #DFDBDB;
+}
+  .visit-grid div.activeDay{
+      height: 100%;
+      background-color: #FD7F68;
+  }
+  .visit-grid div.activeDay div{
+    /* height: 100%; */
+    background-color: #FD7F68;
+}
+  .visit-grid div .Visittimes{
+      text-align: center;
+      margin: 10px auto 0 auto;
+  }
+

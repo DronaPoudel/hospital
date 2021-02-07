@@ -1,0 +1,250 @@
+body{
+    margin: 0;
+}
+.navbar{
+display: flex;
+justify-content: space-around;
+padding: 10px 0;
+}
+.logo{
+    /* background-color: red; */
+}
+.logo img{
+    height: 40px;
+}
+
+/* Hero */
+.hero{
+    background: linear-gradient(40deg, rgba(11, 10, 11, 0.8), rgba(46, 48, 55, 0.3)), url(./assets/hero-bg.png) no-repeat;
+    height: 75vh;
+    background-size: cover;
+}
+.hero .hero-content{
+    text-align: center;
+    margin: 80px;
+}
+.hero h1{
+    color: #fff;
+}
+.main-card{
+    display: flex;
+    justify-content: center;
+}
+.card-single{
+    max-width: 240px;
+    padding: 24px 10px;
+    text-align: center;
+}
+.card-single:nth-child(1){
+    background-color: #FD7F68;
+}
+.card-single:nth-child(2){
+    background-color: #fff;
+}
+.card-single:nth-child(3){
+    background-color: #345868;
+}
+.card-single button {
+    background-color: transparent;
+    padding: 7px 22px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+}
+.card-single:nth-child(2) button{
+    color: #345868;
+    border-color: #345868;
+}
+.card-single button:hover{
+    color: #000;
+    background-color: #fff;
+    cursor: pointer;
+    transition-duration: .5s;
+}
+.card-single:nth-child(2) button:hover{
+    color: #fff;
+    background-color: #345868;
+}
+/* Intro HealthCare Section  */
+.intro-section{
+    margin-top: 30vh;
+}
+.intro-section .container{
+    display: flex;
+    /* grid-template-columns: 50% 50%; */
+}
+/* .intro-section .container .introsection-left{
+    grid-area: column-1;
+}
+.intro-section .container .introsection-right{
+    grid-area: column-2;
+} */
+@media screen and (max-width: 1000px) {
+    .intro-section .container{
+    flex-direction: column-reverse;
+
+
+        /* display: grid;
+        grid-template-columns: 100%; */
+    }
+    /* .intro-section .container {
+        grid-template-areas: "column-2 column-1";
+    } */
+    }
+.intro-section .container .introsection-left{
+    margin: auto;
+}
+.intro-section .container .introsection-right{
+    display: flex;
+    justify-content: center;
+}
+.intro-section .container .introsection-right img{
+    max-height: 500px;
+}
+@media screen and (max-width: 600px) {
+    .intro-section .container .introsection-right img{
+        width: 50%;
+    margin-top: 100px;
+    }
+}
+
+/* Get started with CTA button section  */
+.getstarted-section{
+    background: linear-gradient(40deg, rgba(110, 49, 49, 0.35), #FD7F68), url(./assets/getstarted-bg.png) no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    margin: 50px 0;
+    padding: 50px 0;
+}
+.getstarted-section button{
+    padding: 20px 40px;
+    cursor: pointer;
+}
+
+/* Why use our Services section  */
+.why-use{
+    text-align: center;
+}
+.why-use .grid{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-gap: 5%;
+}
+@media screen and (max-width: 1000px) {
+    .why-use .grid {
+        grid-template-columns: 50% 50%;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .why-use .grid {
+        grid-template-columns: 100%;
+        text-align: center;
+    }
+  }
+.why-use .container{
+    display: flex;
+    justify-content: center;
+}
+.whyuseItem{
+    border: 1px solid #707070;
+    padding-bottom: 0;
+}
+.whyuseItem:hover{
+    box-shadow: -2px 2px 12px 0px rgba(0,0,0,0.75);
+}
+.whyuseItem .card-content{
+    /* margin: 20px; */
+}
+.whyuseItem .card-content p{
+    background: #345868;
+    margin-bottom: 0;
+    padding: 0 20px;
+    color: #fff;
+}
+.whyuseItem  img{
+    margin-top: 20px;
+}
+.whyuseItem:hover img{
+    transform: scale(1.2);
+    transition-duration: .5s;
+}
+.Footer-grid {
+    display: grid;
+    grid-template-columns: 25% 22% 22% 20%;
+    background-color: #345868;
+    text-align: center;
+    color: #fff;
+    padding: 40px 0;
+    margin-top: 40px;
+}
+.Footer-grid ul{
+    padding: 0;
+}
+.Footer-grid ul li{
+    list-style: none;
+}
+
+.below-footer{
+    text-align: center;
+    background-color: #273238;
+    padding: 10px;
+    color: #FD7F68;
+}
+.action-area button{
+    background-color: none;
+    border: 2px solid #345868;
+    padding: 10px 32px;
+    border-radius: 50px;
+}
+.action-area button a{
+    text-decoration: none;
+}
+.Signin-Page{
+    background:linear-gradient(40deg, rgba(110, 49, 49, 0.35), #2e3a8e), url(./assets/Healthy-girl.png);
+    background-size: cover;
+    padding: 200px;
+}
+.Signin-Page .box{
+ background-color: #fff;
+ padding: 100px;
+ width: 260px;
+ margin: 0 auto;
+ margin-left: 0vw;
+ border-radius: 30px;
+ box-shadow:1px 1px 5px 0px rgba(50, 50, 50, 0.75)
+}
+.Signin-Page .box label{
+    width: 74px;
+}
+.Signin-Page .box input{
+border-top: 0;
+border-right: 0;
+border-left: 0;
+border-bottom: blue 1px solid;
+}
+.Signin-Page .box h2{
+    color: #FD7F68;
+}
+.Signin-Page .box input:focus {
+    outline:none;
+}
+.Signin-Page .box input[type='submit'] {
+    padding: 10px 40px;
+    border: 2px solid #383173 !important;
+    background: none;
+    border-radius: 20px;
+    font-weight: bold;
+}
+.Signin-Page .box input[type='submit']:hover {
+    color: #FD7F68;
+    cursor: pointer;
+    border: 2px solid #FD7F68 !important;
+
+    transition-duration: .4s;
+}
+
+.Signup-Page{
+    display: flex;
+    justify-content: space-around;
+}
